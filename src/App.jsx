@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Components/Header/Navbar'
-import {BrowserRouter as Router , Routes , Route  } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from './Components/NavComp.jsx/About';
 import Testimoanials from './Components/NavComp.jsx/Testimoanials';
 import Contact from './Components/NavComp.jsx/Contact';
@@ -12,22 +12,25 @@ import TopNavbar from './Components/Header/TopNavbar';
 
 function App() {
   return (
-    <div>
+    < >
       <Router>
-        <TopNavbar/>
-      <Navbar/>
-        <Routes>
-          <Route exact path='/' element={<Home/>}/>
-          <Route exact path='/about' element={<About/>}/>
-          <Route exact path='/testimonials' element={<Testimoanials/>}/>
-          <Route exact path='/contact' element={<Contact/>}/>
-          <Route exact path='/faq' element={<Faq/>}/>
-          <Route exact path='gallery' element={<Gallery/>}/>
-          <Route exact path='blog' element={<Blog/>}/>
+        <TopNavbar />
+        <Navbar />
+          <div className=''>
+        <Routes >
+
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/testimonials' element={<Testimoanials />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route exact path='/faq' element={<Faq />} />
+          <Route exact path='gallery' element={<Gallery />} />
+          <Route exact path='blog' element={<Blog />} />
         </Routes>
+          </div>
       </Router>
-      
-    </div>
+
+    </>
   )
 }
 

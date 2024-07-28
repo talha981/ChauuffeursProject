@@ -3,8 +3,8 @@ import React from 'react'
 function Home() {
   return (
     <div className="container mx-auto p-6 font-sans">
-    <h4 className="text-yellow-500 text-lg font-semibold  mt-10 text-center md:text-xl lg:text-2xl">Our Story</h4>
-    <h1 className="text-3xl font-bold mb-8 text-center md:text-4xl lg:text-4xl">Introduction</h1>
+   <h4 className="text-yellow-500 text-lg font-semibold mt-10 text-center md:text-xl lg:text-2xl">Our Story</h4>
+   <h1 className="text-3xl font-semibold mb-8 text-center md:text-4xl lg:text-5xl">Introduction</h1>
     <div className="mb-6">
       <img
         src="AboutSection1.jpg"

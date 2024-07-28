@@ -31,7 +31,7 @@ function Navbar() {
   ), []);
 
   return (
-    <nav className="bg-gray-800 p-6 font-sans">
+    <nav className="bg-Navbar p-6 font-sans">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="flex items-center flex-shrink-0 text-yellow-500 mr-6">
           <span className="font-semibold text-xl italic tracking-tight">Grandeur Chauffers</span>
