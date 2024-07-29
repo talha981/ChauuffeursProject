@@ -36,9 +36,9 @@ function About() {
 
 
       <div className="flex justify-center mb-8 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">__________________</p>
+        <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700  m-0 p-0">________________</p>
-        <p className="text-gray-400 m-0 p-0">_________________</p>
+        <p className="text-gray-400 m-0 p-0">_____________</p>
       </div>
       <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div className=" transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
@@ -97,10 +97,10 @@ function About() {
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Certified Chauffeurs</h1>
 
 
-      <div className="flex justify-center mb-4 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">____________</p>
-        <p className="text-yellow-700  m-0 p-0">______________</p>
-        <p className="text-gray-400 m-0 p-0">______________</p>
+      <div className="flex justify-center mb-8 font-extrabold">
+        <p className="text-gray-400 m-0 p-0">__________________</p>
+        <p className="text-yellow-700  m-0 p-0">________________</p>
+        <p className="text-gray-400 m-0 p-0">_________________</p>
       </div>
       {/* About Section Text */}
       <div className="text-gray-700 leading-relaxed">
@@ -115,15 +115,14 @@ function About() {
       </div>
 
       {/* Contact Information */}
-      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-28 mb-4 text-center md:text-xl lg:text-2xl">Get in Touch
+      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-28 mb-4 text-center md:text-xl lg:text-2xl">Get Social
       </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Contact Us</h1>
-
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Stay Connected</h1>
 
       <div className="flex justify-center mb-8 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">___________</p>
-        <p className="text-yellow-700  m-0 p-0">______________</p>
-        <p className="text-gray-400 m-0 p-0">__________</p>
+        <p className="text-gray-400 m-0 p-0">__________________</p>
+        <p className="text-yellow-700  m-0 p-0">________________</p>
+        <p className="text-gray-400 m-0 p-0">_________________</p>
       </div>
       <div className="contact-info bg-Form3 rounded-lg p-8  shadow-lg">
         <p className="text-lg text-center text-gray-700 mb-4">We would love to hear from you! Feel free to reach out to us with any inquiries or to book your next luxury ride.</p>

@@ -2,16 +2,17 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="container mx-auto p-6 font-sans">
-   <h4 className="text-yellow-500 text-lg font-semibold mt-10 text-center md:text-xl lg:text-2xl">Our Story</h4>
-   <h1 className="text-3xl font-semibold mb-8 text-center md:text-4xl lg:text-5xl">Introduction</h1>
+    <div className=" font-sans">
+   {/* <h4 className="text-yellow-500 text-lg font-semibold mt-10 text-center md:text-xl lg:text-2xl">Our Story</h4>
+   <h1 className="text-3xl font-semibold mb-8 text-center md:text-4xl lg:text-5xl">Introduction</h1> */}
     <div className="mb-6">
       <img
-        src="AboutSection1.jpg"
+        src="Home2.jpg"
         alt="About Us"
-        className="w-full h-auto max-w-4xl mx-auto rounded-lg shadow-lg"
+        className="w-full h-auto  mx-auto  shadow-lg"
       />
     </div>
+    <div></div>
     <div className="text-gray-700 leading-relaxed">
       <p className="text-base md:text-lg lg:text-xl">
         With years of experience in the luxury transportation industry, our chauffeuring service in London has established a reputation for excellence and reliability. Catering to a diverse clientele from all around the world, we offer an extensive fleet of premium vehicles to meet your every need, ensuring an unparalleled travel experience.

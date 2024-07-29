@@ -8,17 +8,20 @@ const questionsAndAnswers = [
   { question: "How can I book a ride?", answer: "You can book a ride through our website or by calling our customer service number." },
   { question: "Do you offer airport transfers?", answer: "Yes, we provide airport transfer services to and from all major airports." },
   { question: "Are your drivers licensed and insured?", answer: "Yes, all our drivers are licensed and insured to ensure your safety and peace of mind." },
-  { question: "What is your cancellation policy?", answer: "We offer a flexible cancellation policy with a full refund if canceled at least 24 hours before the scheduled ride." }
+  { question: "What is your cancellation policy?", answer: "We offer a flexible cancellation policy with a full refund if canceled at least 24 hours before the scheduled ride." },
+  { question: "Can I rent a car without a driver?", answer: "Yes, we offer a range of self-drive rental cars for your convenience." },
+  { question: "What are the requirements for renting a car?", answer: "You must be at least 21 years old, have a valid driver's license, and provide a major credit card for the security deposit." },
+  { question: "Do you offer insurance for rental cars?", answer: "Yes, we offer comprehensive insurance coverage options for all our rental cars." },
+  { question: "What is the process for returning a rental car?", answer: "You can return the car to any of our locations. Please ensure the car is in the same condition as when it was rented and that the fuel tank is refilled." },
 ];
 
 const Faq = () => {
   const navigate = useNavigate();
+  const [visibleIndex, setVisibleIndex] = useState(null);
 
   const handleNavigate = () => {
     navigate('/contact'); // Ensure this path matches your routing setup
   };
-
-  const [visibleIndex, setVisibleIndex] = useState(null);
 
   const handleToggle = (index) => {
     setVisibleIndex(visibleIndex === index ? null : index);
@@ -47,11 +50,21 @@ const Faq = () => {
           <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
             Experience the ultimate in luxury and convenience with our bespoke chauffeuring services, tailored to exceed your expectations and deliver a truly remarkable journey. Trust us to provide a seamless and sophisticated travel experience every time.
           </p>
+          <h4 className="italic text-lg font-semibold mb-4 md:text-xl lg:text-2xl">Rental Car Services</h4>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
+            In addition to our chauffeuring services, we also offer a wide range of rental cars for self-drive purposes. Whether you need a car for a day, a week, or longer, we have flexible rental options to meet your needs. Our fleet includes economy cars, luxury sedans, SUVs, and more.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
+            Our rental cars are well-maintained and regularly serviced to ensure a safe and comfortable driving experience. We also offer various insurance coverage options for your peace of mind.
+          </p>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
+            Book your rental car today and enjoy the freedom of exploring the city at your own pace. Contact us for more information on our rental car services and to make a reservation.
+          </p>
         </div>
 
         {/* FAQ Section */}
         <div className="flex-1">
-          <div className="flex flex-col space-y-4 mb-6">
+          <div className="flex flex-col space-y-4 mb-8">
             {questionsAndAnswers.map((item, index) => (
               <div key={index}>
                 <div
