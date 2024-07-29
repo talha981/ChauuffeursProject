@@ -38,7 +38,7 @@ function Contact() {
     <div className="container mx-auto p-6 font-sans">
       <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Connect with Us</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Contact Us</h1>
-      <div className="flex justify-center mb-4 font-extrabold">
+      <div className="flex justify-center mb-6 font-extrabold">
         <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700  m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">______________</p>
@@ -47,7 +47,7 @@ function Contact() {
         {cards.slice(0, 4).map((card, index) => (
           <div
             key={index}
-            className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 bg-Form2 hover:shadow-black"
+            className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 bg-Form3 hover:shadow-black"
           >
             <img src={card.imgSrc} alt={card.title} className="mx-auto mb-4 w-10 h-10" />
             <h2 className="text-2xl font-semibold mb-2">{card.title}</h2>
@@ -57,8 +57,8 @@ function Contact() {
             />
           </div>
         ))}
-        <div className="md:col-span-4 flex mb-32 justify-center">
-          <div className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 hover:shadow-black w-full max-w-sm bg-Form2">
+        <div className="md:col-span-4 flex mb-28 justify-center">
+          <div className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 hover:shadow-black w-full max-w-sm bg-Form3">
             <img src={cards[4].imgSrc} alt={cards[4].title} className="mx-auto mb-4 w-10 h-10" />
             <h2 className="text-2xl font-semibold mb-2">{cards[4].title}</h2>
             <p
@@ -69,14 +69,14 @@ function Contact() {
         </div>
       </div>
 
-      <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Reach Out</h4>
+      <h4 className="text-yellow-700 italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl">Reach Out</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Send Message</h1>
       <div className="flex justify-center mb-4 font-extrabold">
         <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700  m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">______________</p>
       </div> 
-      <div className="bg-Form2 flex rounded-2xl justify-center">
+      <div className="bg-Form3 flex rounded-2xl justify-center">
         <div className="w-full max-w-lg p-8">
           <form className="space-y-4">
             {/* Name input */}

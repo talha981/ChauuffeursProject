@@ -1,42 +1,58 @@
-import React, { useState, useMemo } from 'react'; // Ensure useState and useMemo are imported
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import React, { useState, useMemo } from 'react'; 
+import { Link, useLocation } from 'react-router-dom'; 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation(); // Get the current pathname
 
   const navLinks = useMemo(() => (
     <>
-      <Link to="/" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         Home
       </Link>
-      <Link to="/about" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/about"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/about' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         About Us
       </Link>
-      <Link to="/testimonials" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/testimonials"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/testimonials' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         Testimonials
       </Link>
-      <Link to="/contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/contact"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/contact' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         Contact Us
       </Link>
-      <Link to="/faq" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/faq"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/faq' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         FAQ
       </Link>
-      <Link to="/gallery" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 mr-4 lg:mr-6 uppercase">
+      <Link
+        to="/gallery"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/gallery' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
         Gallery
       </Link>
-      <Link to="/blog" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-yellow-500 uppercase">
-        Blog
-      </Link>
     </>
-  ), []);
+  ), [location.pathname]); // Update navLinks when location.pathname changes
 
   return (
-    <nav className="bg-Navbar p-6 font-sans">
+    <nav className="bg-Form p-6 font-sans">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="flex items-center flex-shrink-0 text-yellow-500 mr-6">
-          <span className="font-semibold text-xl italic tracking-tight">Grandeur Chauffers</span>
+          <span className="font-semibold text-2xl italic tracking-tight">Grandeur Chauffeurs</span>
         </div>
-        <div className="block lg:hidden">
+        <div className="block lg:hidden ml-auto">
           <button 
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-yellow-500 hover:border-yellow-500"
@@ -48,7 +64,7 @@ function Navbar() {
           </button>
         </div>
         <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? '' : 'hidden'}`}>
-          <div className="text-sm ml-14 lg:flex-grow">
+          <div className="text-sm flex flex-col lg:flex-row lg:justify-center lg:items-center lg:flex-grow">
             {navLinks}
           </div>
           <div className="lg:flex lg:items-center">

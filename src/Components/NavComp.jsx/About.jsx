@@ -61,7 +61,7 @@ function About() {
 
       {/* Team Member Cards */}
       <div className="grid grid-cols-1 mb-32 md:grid-cols-2 gap-8  ">
-        <div className=" rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-black bg-Form2">
+        <div className=" rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-2xl bg-Form3">
           <div className="flex justify-center">
             <img
               src="Bilal.png"
@@ -76,7 +76,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="bg-Form2 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-black ">
+        <div className="bg-Form3 rounded-lg shadow-lg p-6 transition-transform transform hover:-translate-y-2 hover:shadow-2xl ">
           <div className="flex justify-center">
             <img
               src="Bilal.png"
@@ -93,8 +93,29 @@ function About() {
         </div>
       </div>
 
+      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl">Qualified Personnel</h4>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Certified Chauffeurs</h1>
+
+
+      <div className="flex justify-center mb-4 font-extrabold">
+        <p className="text-gray-400 m-0 p-0">____________</p>
+        <p className="text-yellow-700  m-0 p-0">______________</p>
+        <p className="text-gray-400 m-0 p-0">______________</p>
+      </div>
+      {/* About Section Text */}
+      <div className="text-gray-700 leading-relaxed">
+        <p className="text-base md:text-lg lg:text-xl">
+          Our chauffeurs are not only professional but also exceptionally courteous. Each chauffeur undergoes a comprehensive training program meticulously designed to instill a keen attention to detail and to ensure they are highly attentive to our customer's needs.        </p>
+        <p className="mt-4 text-base md:text-lg lg:text-xl">
+          The Chauffeur Certification program encompasses six rigorous modules that every chauffeur must successfully complete to qualify for driving with Grandeur Executive Transportation. This extensive training ensures our chauffeurs are fully prepared to deliver the highest standards of safety and service to our esteemed passengers.</p>
+        <p className="mt-4 text-base md:text-lg lg:text-xl">
+          Our commitment is to exceed the expectations of a Luxury Black Car Service. By prioritizing unparalleled service and safety, we strive to deliver an exceptional experience that goes above and beyond industry standards.       
+          In addition to their initial training, our chauffeurs participate in ongoing professional development to stay current with industry best practices and emerging technologies. This continuous learning approach empowers our chauffeurs to consistently provide an exceptional level of service, ensuring that every ride with Grandeur Executive Transportation is a seamless and luxurious experience. </p>
+
+      </div>
+
       {/* Contact Information */}
-      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Get in Touch
+      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-28 mb-4 text-center md:text-xl lg:text-2xl">Get in Touch
       </h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Contact Us</h1>
 
@@ -104,7 +125,7 @@ function About() {
         <p className="text-yellow-700  m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">__________</p>
       </div>
-      <div className="contact-info bg-Form2 rounded-lg p-8  shadow-lg">
+      <div className="contact-info bg-Form3 rounded-lg p-8  shadow-lg">
         <p className="text-lg text-center text-gray-700 mb-4">We would love to hear from you! Feel free to reach out to us with any inquiries or to book your next luxury ride.</p>
         <div className="flex flex-col items-center mb-6">
           <p className="text-lg text-gray-700"><strong>Email:</strong> <a href="mailto:info@grandeurchauffeurs.com" className="text-blue-500">info@grandeurchauffeurs.com</a></p>

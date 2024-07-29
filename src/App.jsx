@@ -6,7 +6,6 @@ import Testimoanials from './Components/NavComp.jsx/Testimoanials';
 import Contact from './Components/NavComp.jsx/Contact';
 import Faq from './Components/NavComp.jsx/Faq';
 import Gallery from './Components/NavComp.jsx/Gallery';
-import Blog from './Components/NavComp.jsx/Blog';
 import Home from './Components/Home';
 import TopNavbar from './Components/Header/TopNavbar';
 
@@ -25,7 +24,6 @@ function App() {
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/faq' element={<Faq />} />
           <Route exact path='gallery' element={<Gallery />} />
-          <Route exact path='blog' element={<Blog />} />
         </Routes>
           </div>
       </Router>

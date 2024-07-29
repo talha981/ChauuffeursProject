@@ -3,7 +3,7 @@ import React from 'react';
 function TopNavbar() {
   return (
     <>
-      <div className="bg-Navbar text-white pt-5  font-sans">
+      <div className="bg-Form text-white pt-5  font-sans">
         <div className="container mx-auto flex flex-wrap  justify-between">
           <div className="flex flex-col md:flex-row  flex-wrap">
             <div className="flex  mr-4 mb-2 md:mb-0">
