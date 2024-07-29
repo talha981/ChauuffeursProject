@@ -39,8 +39,8 @@ function About() {
         <p className="text-gray-400 m-0 p-0">__________________</p>
         <p className="text-yellow-700  m-0 p-0">________________</p>
         <p className="text-gray-400 m-0 p-0">_________________</p>
-      </div>    
-        <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      </div>
+      <div className="team-members grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div className=" transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
           <img
             src="AboutSection1.jpg"
@@ -103,7 +103,7 @@ function About() {
         <p className="text-gray-400 m-0 p-0">___________</p>
         <p className="text-yellow-700  m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">__________</p>
-      </div>    
+      </div>
       <div className="contact-info bg-Form2 rounded-lg p-8  shadow-lg">
         <p className="text-lg text-center text-gray-700 mb-4">We would love to hear from you! Feel free to reach out to us with any inquiries or to book your next luxury ride.</p>
         <div className="flex flex-col items-center mb-6">

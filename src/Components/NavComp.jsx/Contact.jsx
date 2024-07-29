@@ -38,11 +38,11 @@ function Contact() {
     <div className="container mx-auto p-6 font-sans">
       <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Connect with Us</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Contact Us</h1>
-      <div className="flex justify-center mb-8 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">___________</p>
-        <p className="text-yellow-700 m-0 p-0">______________</p>
-        <p className="text-gray-400 m-0 p-0">__________</p>
-      </div>   
+      <div className="flex justify-center mb-4 font-extrabold">
+        <p className="text-gray-400 m-0 p-0">____________</p>
+        <p className="text-yellow-700  m-0 p-0">______________</p>
+        <p className="text-gray-400 m-0 p-0">______________</p>
+      </div> 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {cards.slice(0, 4).map((card, index) => (
           <div
@@ -71,11 +71,11 @@ function Contact() {
 
       <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Reach Out</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Send Message</h1>
-      <div className="flex justify-center mb-8 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">___________</p>
-        <p className="text-yellow-700 m-0 p-0">______________</p>
-        <p className="text-gray-400 m-0 p-0">__________</p>
-      </div>  
+      <div className="flex justify-center mb-4 font-extrabold">
+        <p className="text-gray-400 m-0 p-0">____________</p>
+        <p className="text-yellow-700  m-0 p-0">______________</p>
+        <p className="text-gray-400 m-0 p-0">______________</p>
+      </div> 
       <div className="bg-Form2 flex rounded-2xl justify-center">
         <div className="w-full max-w-lg p-8">
           <form className="space-y-4">
