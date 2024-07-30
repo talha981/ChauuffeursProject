@@ -20,7 +20,7 @@ function HomeSlider() {
     },
     {
       title: "Grandeur",
-      subtitle: "VIP Transfers",
+      subtitle: "Vip Transfers",
       description: "for your success in business",
     },
     {

@@ -12,6 +12,8 @@ export default {
         "Form": "rgba(96,96,96,255)",
         "Form2": "rgb(232, 232, 216)",
         "Form3": "#e5e7eb",
+        "CarCard" :"#192026",
+        "CarCard2" : "rgba(25,32,38,255)"
       },
       keyframes: {
         fadeIn: {

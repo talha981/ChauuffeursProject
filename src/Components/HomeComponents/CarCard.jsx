@@ -9,7 +9,8 @@ function CarCard() {
   };
 
   return (
-    <> <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Explore Our</h4>
+    <> 
+    <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Explore Our</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Luxury Collection</h1>
 
 
@@ -19,7 +20,7 @@ function CarCard() {
         <p className="text-gray-400 m-0 p-0">______________</p>
       </div>
     
-    <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-6 p-6 h-screen">
+    <div className="flex flex-col lg:flex-row lg:items-start space-y-6 lg:space-y-0 lg:space-x-6 p-6 ">
       <div className="flex flex-col lg:w-1/2 lg:pr-6">
         <h1 className="text-3xl font-semibold  text-yellow-700  md:text-4xl lg:text-6xl">Luxury Cars</h1>
         <p className="text-4xl lg:text-5xl  mt-4 font-semibold">for Maximum <br /> Satisfaction</p>
@@ -37,7 +38,13 @@ function CarCard() {
       <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
         <img src="about-limmo.png" alt="Luxury Car" className="w-full h-auto " />
       </div>
+
+      
     </div>
+   
+
+
+      
             </>
   );
 }
