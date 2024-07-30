@@ -59,6 +59,12 @@ function CarCard2() {
           <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
             <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
           </div>
+          <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
+            <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
+          </div>
+          <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
+            <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
+          </div>
         </div>
       </div>
     </div>
