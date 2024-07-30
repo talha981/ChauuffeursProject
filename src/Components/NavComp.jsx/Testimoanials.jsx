@@ -55,7 +55,7 @@ function Testimonials() {
       <h4 className="text-yellow-700  italic text-lg  font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">
         Partners
       </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">
         Top Clients Reviews
       </h1>
       <div className="flex justify-center mb-6 font-extrabold">
@@ -93,7 +93,7 @@ function Testimonials() {
               )}
             </div>
             <div className="mt-4 text-center">
-              <h1 className="text-2xl mb-32 md:text-3xl lg:text-2xl font-semibold">
+              <h1 className="text-2xl mb-32 md:text-3xl text-CarCard2 lg:text-2xl font-semibold">
                 {card.name}
               </h1>
             </div>
@@ -104,7 +104,7 @@ function Testimonials() {
       <h4 className="text-yellow-700 font-italic text-lg font-semibold mt-32 mb-4 text-center md:text-xl lg:text-xl">
         Feedback
       </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl text-CarCard2 lg:text-5xl">
         Leave your Reviews
       </h1>
       <div className="flex justify-center mb-4 font-extrabold">

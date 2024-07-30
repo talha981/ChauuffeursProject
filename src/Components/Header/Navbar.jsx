@@ -47,7 +47,7 @@ function Navbar() {
   ), [location.pathname]); // Update navLinks when location.pathname changes
 
   return (
-    <nav className="bg-black p-6 font-sans">
+    <nav className="bg-CarCard2 p-6 font-sans">
       <div className="container mx-auto flex flex-wrap mb-5 items-center justify-between w-full ">
         <div className="flex items-center flex-shrink-0 text-yellow-500 mr-6">
           <span className="font-semibold text-2xl italic tracking-tight">Grandeur Chauffeurs</span>

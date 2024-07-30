@@ -31,7 +31,7 @@ const Faq = () => {
     <div className="container mx-auto p-6 font-sans">
       {/* Introduction Section */}
       <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Common Queries</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Query Resolution</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">Query Resolution</h1>
       <div className="flex justify-center mb-6 font-extrabold">
         <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700 m-0 p-0">______________</p>
@@ -40,7 +40,7 @@ const Faq = () => {
       <div className="flex flex-col lg:flex-row lg:space-x-8 mx-auto mb-12">
         {/* About Our Services Section */}
         <div className="flex-1 lg:mr-8">
-          <h4 className="italic text-lg font-semibold mb-4 md:text-xl lg:text-2xl">Every day help for our customers</h4>
+          <h4 className="italic text-lg font-semibold mb-4 md:text-xl lg:text-2xl text-CarCard2">Every day help for our customers</h4>
           <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
             At Grandeur Chauffeurs, we are dedicated to providing seamless and luxurious transportation solutions tailored to your needs. Whether you’re traveling for business, pleasure, or a special event, our commitment to excellence ensures a stress-free and enjoyable journey every time.
           </p>
@@ -50,7 +50,7 @@ const Faq = () => {
           <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
             Experience the ultimate in luxury and convenience with our bespoke chauffeuring services, tailored to exceed your expectations and deliver a truly remarkable journey. Trust us to provide a seamless and sophisticated travel experience every time.
           </p>
-          <h4 className="italic text-lg font-semibold mb-4 md:text-xl lg:text-2xl">Rental Car Services</h4>
+          <h4 className="italic text-lg font-semibold mb-4 md:text-xl lg:text-2xl text-CarCard2">Rental Car Services</h4>
           <p className="text-gray-700 leading-relaxed text-base md:text-lg lg:text-xl mb-4">
             In addition to our chauffeuring services, we also offer a wide range of rental cars for self-drive purposes. Whether you need a car for a day, a week, or longer, we have flexible rental options to meet your needs. Our fleet includes economy cars, luxury sedans, SUVs, and more.
           </p>
@@ -68,7 +68,7 @@ const Faq = () => {
     {questionsAndAnswers.map((item, index) => (
       <div key={index}>
         <div
-          className={`cursor-pointer font-bold p-4 rounded-t-lg transition-colors duration-300 ease-in-out  ${visibleIndex === index ? 'bg-yellow-700 text-white' : 'bg-gray-200 hover:bg-yellow-600'}`}
+          className={`cursor-pointer font-bold p-4 rounded-t-lg transition-colors duration-300 ease-in-out text-CarCard2 ${visibleIndex === index ? 'bg-yellow-700 text-white' : 'bg-gray-200 hover:bg-yellow-600'}`}
           onClick={() => handleToggle(index)}
         >
           {item.question}

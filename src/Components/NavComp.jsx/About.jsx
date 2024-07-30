@@ -5,7 +5,7 @@ function About() {
     <div className="container mx-auto p-6 font-sans">
       {/* Introduction Section */}
       <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Our Story</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Introduction</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-CarCard2 text-center md:text-4xl lg:text-5xl">Introduction</h1>
 
 
       <div className="flex justify-center mb-4 font-extrabold">
@@ -32,7 +32,7 @@ function About() {
       {/* Team Members Section */}
       <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Team Grandeur
       </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Meet Our Team</h1>
+      <h1 className="text-3xl font-semibold text-CarCard2 mb-4 text-center md:text-4xl lg:text-5xl">Meet Our Team</h1>
 
 
       <div className="flex justify-center mb-8 font-extrabold">
@@ -70,7 +70,7 @@ function About() {
             />
           </div>
           <div className="">
-            <h4 className="text-xl font-semibold text-center">Bilal Akbar</h4>
+            <h4 className="text-xl text-CarCard2 font-semibold text-center">Bilal Akbar</h4>
             <p className="text-base mt-2">
               Bilal has over 20 years of experience in the luxury car rental industry. His vision and leadership have been pivotal in the growth of Grandeur Chauffeurs.
             </p>
@@ -85,7 +85,7 @@ function About() {
             />
           </div>
           <div className="">
-            <h4 className="text-xl font-semibold text-center">Jane Smith</h4>
+            <h4 className="text-xl font-semibold text-CarCard2 text-center">Jane Smith</h4>
             <p className="text-base mt-2">
               Jane has over 20 years of experience in the luxury car rental industry. Her vision and leadership have been pivotal in the growth of Grandeur Chauffeurs.
             </p>
@@ -93,8 +93,8 @@ function About() {
         </div>
       </div>
 
-      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl">Qualified Personnel</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Certified Chauffeurs</h1>
+      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl ">Qualified Personnel</h4>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl  text-CarCard2 lg:text-5xl">Certified Chauffeurs</h1>
 
 
       <div className="flex justify-center mb-8 font-extrabold">
@@ -117,7 +117,7 @@ function About() {
       {/* Contact Information */}
       <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-28 mb-4 text-center md:text-xl lg:text-2xl">Get Social
       </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Stay Connected</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">Stay Connected</h1>
 
       <div className="flex justify-center mb-8 font-extrabold">
         <p className="text-gray-400 m-0 p-0">__________________</p>

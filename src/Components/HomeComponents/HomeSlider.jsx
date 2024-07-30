@@ -49,10 +49,10 @@ function HomeSlider() {
             <span className="text-5xl font-semibold sm:text-6xl md:text-7xl lg:text-7xl italic text-yellow-600 ml-3">
               {slides[currentIndex].title}
             </span> <br />
-            <span className="text-6xl font-semibold sm:text-7xl md:text-8xl lg:text-8xl italic text-black mb-4">
+            <span className="text-6xl font-semibold sm:text-7xl md:text-8xl lg:text-8xl italic text-CarCard2 mb-4">
               {slides[currentIndex].subtitle}
             </span> <br /> <br/>
-            <span className="text-lg font-normal sm:text-sm md:text-base lg:text-2xl italic text-black sm:mt-10 lg:mt-10">
+            <span className="text-lg font-normal sm:text-sm md:text-base lg:text-2xl italic text-CarCard2 sm:mt-10 lg:mt-10">
               {slides[currentIndex].description}
             </span>
           </p>

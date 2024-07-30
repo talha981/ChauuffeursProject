@@ -37,7 +37,7 @@ function Contact() {
   return (
     <div className="container mx-auto p-6 font-sans">
       <h4 className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Connect with Us</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Contact Us</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl  text-CarCard2 lg:text-5xl">Contact Us</h1>
       <div className="flex justify-center mb-6 font-extrabold">
         <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700  m-0 p-0">______________</p>
@@ -50,9 +50,9 @@ function Contact() {
             className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 bg-Form3 hover:shadow-black"
           >
             <img src={card.imgSrc} alt={card.title} className="mx-auto mb-4 w-10 h-10" />
-            <h2 className="text-2xl font-semibold mb-2">{card.title}</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-CarCard2">{card.title}</h2>
             <p
-              className="text-base text-gray-700 break-words"
+              className="text-base text-gray-700 break-words text-CarCard2"
               dangerouslySetInnerHTML={{ __html: sanitizeHTML(card.content) }}
             />
           </div>
@@ -60,9 +60,9 @@ function Contact() {
         <div className="md:col-span-4 flex mb-28 justify-center">
           <div className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 hover:shadow-black w-full max-w-sm bg-Form3">
             <img src={cards[4].imgSrc} alt={cards[4].title} className="mx-auto mb-4 w-10 h-10" />
-            <h2 className="text-2xl font-semibold mb-2">{cards[4].title}</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-CarCard2">{cards[4].title}</h2>
             <p
-              className="text-base text-gray-700 break-words"
+              className="text-base text-gray-700 break-words text-CarCard2"
               dangerouslySetInnerHTML={{ __html: sanitizeHTML(cards[4].content) }}
             />
           </div>
@@ -70,7 +70,7 @@ function Contact() {
       </div>
 
       <h4 className="text-yellow-700 italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl">Reach Out</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl">Send Message</h1>
+      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">Send Message</h1>
       <div className="flex justify-center mb-4 font-extrabold">
         <p className="text-gray-400 m-0 p-0">____________</p>
         <p className="text-yellow-700  m-0 p-0">______________</p>
