@@ -64,31 +64,32 @@ const Faq = () => {
 
         {/* FAQ Section */}
         <div className="flex-1">
-          <div className="flex flex-col space-y-4 mb-8">
-            {questionsAndAnswers.map((item, index) => (
-              <div key={index}>
-                <div
-                  className={`cursor-pointer font-bold p-4 rounded-t-lg transition-colors duration-300 ease-in-out ${visibleIndex === index ? 'bg-yellow-700 text-white' : 'bg-gray-200 hover:bg-yellow-600'}`}
-                  onClick={() => handleToggle(index)}
-                >
-                  {item.question}
-                </div>
-                <div
-                  className={`transition-max-height duration-500 ease-out overflow-hidden ${visibleIndex === index ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}
-                >
-                  <p className="p-4 text-base md:text-lg lg:text-xl bg-gray-50 rounded-b-lg">
-                    {item.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="flex justify-center">
-            <button className="bg-yellow-700 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors duration-300 w-full sm:w-auto" onClick={handleNavigate}>
-              Contact Us
-            </button>
-          </div>
+  <div className="flex flex-col space-y-4 mb-8">
+    {questionsAndAnswers.map((item, index) => (
+      <div key={index}>
+        <div
+          className={`cursor-pointer font-bold p-4 rounded-t-lg transition-colors duration-300 ease-in-out  ${visibleIndex === index ? 'bg-yellow-700 text-white' : 'bg-gray-200 hover:bg-yellow-600'}`}
+          onClick={() => handleToggle(index)}
+        >
+          {item.question}
         </div>
+        <div
+          className={`transition-max-height duration-500 ease-out overflow-hidden ${visibleIndex === index ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'}`}
+        >
+          <p className="p-4 text-base md:text-lg lg:text-xl bg-gray-100 rounded-b-lg ">
+            {item.answer}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+  <div className="flex justify-center">
+    <button className="bg-yellow-700 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition-colors duration-300 w-full sm:w-auto" onClick={handleNavigate}>
+      Contact Us
+    </button>
+  </div>
+</div>
+
       </div>
     </div>
   );
