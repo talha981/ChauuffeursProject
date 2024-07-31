@@ -48,9 +48,11 @@ function Navbar() {
 
   return (
     <nav className="bg-CarCard2 p-6 font-sans">
-      <div className="container mx-auto flex flex-wrap mb-5 items-center justify-between w-full ">
+      <div className="container mx-auto flex flex-wrap mb- items-center justify-between w-full ">
         <div className="flex items-center flex-shrink-0 text-yellow-500 mr-6">
-          <span className="font-semibold text-2xl italic tracking-tight">Grandeur Chauffeurs</span>
+        {/* <img src="Logo.png" alt="Logo" class="h-20 w-36 sm:h-20 sm:w-36 md:h-20 md:w-36 lg:h-20 lg:w-36 xl:h-18 xl:w-18 2xl:h-40 2xl:w-40" /> */}
+        
+        <span className="font-semibold text-2xl italic font-mono tracking-tight"><span className='text-yellow-50'>Grandeur <br/></span> Chauffeurs</span>
         </div>
         <div className="block lg:hidden ml-auto">
           <button 

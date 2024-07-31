@@ -36,11 +36,11 @@ function CarCard2() {
       <div className="flex-shrink-0 mb-4 lg:mb-0 lg:mr-8 flex justify-center lg:justify-start">
         <img src="about-limmo3.png" alt="Luxury Car" className="w-56 md:w-72 lg:w-96 h-auto mx-auto lg:mx-0" />
       </div>
-      <div className="text-left lg:text-center">
+      <div className="text-left  lg:text-center">
         <p className="text-white text-xl md:text-2xl lg:text-3xl mb-8 lg:mb-12">
           We make sure that <span className="text-yellow-700"> your every <br className="hidden lg:inline" /> trip </span> is comfortable
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 mt-20 md:grid-cols-3 gap-4">
           <div className="border-r border-white p-4 border-dashed text-left sm:text-center">
             <h2 className="text-white text-base md:text-lg lg:text-xl">Luxury</h2>
           </div>
@@ -59,19 +59,13 @@ function CarCard2() {
           <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
             <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
           </div>
-          <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
-            <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
-          </div>
-          <div className="p-4 text-left sm:text-center border-r border-dashed border-white">
-            <h2 className="text-white text-base md:text-lg lg:text-xl">Professional Car Drivers</h2>
-          </div>
+         
         </div>
       </div>
     </div>
   </div>
 </div>
 
-                <div className='h-screen'></div>
             </div>
         </>
     );

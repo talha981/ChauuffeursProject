@@ -8,6 +8,7 @@ import Faq from './Components/NavComp.jsx/Faq';
 import Gallery from './Components/NavComp.jsx/Gallery';
 import Home from './Components/Home';
 import TopNavbar from './Components/Header/TopNavbar';
+import Airport from './Components/CarCard3/Airport';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
           <Route exact path='/testimonials' element={<Testimoanials />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/faq' element={<Faq />} />
-          <Route exact path='gallery' element={<Gallery />} />
+          <Route exact path='/gallery' element={<Gallery />} />
+          <Route exact path='/airport' element={<Airport/>} />
         </Routes>
           </div>
       </Router>
