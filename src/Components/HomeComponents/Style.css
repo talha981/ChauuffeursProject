@@ -1,0 +1,19 @@
+/* src/styles.css */
+
+.text-3d {
+    position: relative;
+    color: #fbbf24; /* Adjust the text color */
+    font-weight: bold; /* Optional: for better visibility */
+  }
+  
+  .text-3d::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    color: #3b82f6; /* Shadow color */
+    z-index: -1;
+    transform: translateZ(-1px);
+    opacity: 0.6;
+  }
+  

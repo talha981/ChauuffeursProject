@@ -1,7 +1,11 @@
-import React, { useMemo } from 'react';
+import React, { useMemo  , useEffect} from 'react';
 import DOMPurify from 'dompurify';
 
 function Contact() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const cards = useMemo(() => [
     {
       title: 'Location',

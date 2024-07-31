@@ -1,5 +1,6 @@
 // src/ToggleSection.js
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 const questionsAndAnswers = [
@@ -16,6 +17,8 @@ const questionsAndAnswers = [
 ];
 
 const Faq = () => {
+
+
   const navigate = useNavigate();
   const [visibleIndex, setVisibleIndex] = useState(null);
 

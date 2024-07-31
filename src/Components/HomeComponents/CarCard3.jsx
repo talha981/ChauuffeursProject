@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 
 function CarCard3() {
-  const cardData = [
+  // Use useMemo to memoize the cardData array
+  const cardData = useMemo(() => [
     {
       id: 1,
       img: 'CarCard3-1.jpg',
@@ -24,10 +25,10 @@ function CarCard3() {
       description: 'To make your events more special and memorable we provide you our luxury cars to comfort your travel.',
       lines: 4,
     },
-  ];
+  ], []);
 
   return (
-    <div className="container mx-auto mt-8 p-6 font-sans h-screen">
+    <div className="container mx-auto mt-8 p-6 font-sans"> 
       <p className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">
         Welcome to Our
       </p>
@@ -41,8 +42,7 @@ function CarCard3() {
         <p className="text-gray-400 m-0 p-0">______________</p>
       </div>
 
-      <div className="flex flex-col space-y-6 md:flex-row  md:space-y-0 md:space-x-6">
-        
+      <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
         {cardData.map((card) => (
           <div
             key={card.id}
@@ -53,11 +53,21 @@ function CarCard3() {
               alt={card.title}
               className="w-24 h-24 object-cover mt-1 rounded-full mr-4"
             />
-            <div  className="flex flex-col justify-center w-64">
-            <Link to='/airport' className="text-yellow-700 hover:text-gray-50 mb-5 text-2xl font-semibold transition-colors duration-700">
-  {card.title}
-</Link>
-              <p className="text-white overflow-hidden" style={{ display: '-webkit-box', WebkitBoxOrient: 'vertical', WebkitLineClamp: card.lines }}>
+            <div className="flex flex-col justify-center w-64">
+              <Link 
+                to='/airport' 
+                className="text-yellow-700 hover:text-gray-50 mb-5 text-2xl font-semibold transition-colors duration-300"
+              >
+                {card.title}
+              </Link>
+              <p 
+                className="text-white overflow-hidden" 
+                style={{ 
+                  display: '-webkit-box', 
+                  WebkitBoxOrient: 'vertical', 
+                  WebkitLineClamp: card.lines 
+                }}
+              >
                 {card.description}
               </p>
             </div>

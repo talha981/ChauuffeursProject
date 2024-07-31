@@ -4,8 +4,8 @@ function About() {
   return (
     <div className="container mx-auto p-6 font-sans">
       {/* Introduction Section */}
-      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Our Story</h4>
-      <h1 className="text-3xl font-semibold mb-4 text-CarCard2 text-center md:text-4xl lg:text-5xl">Introduction</h1>
+      <p className="text-yellow-700 font-style: italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Our Story</p>
+      <p className="text-3xl font-semibold mb-4 text-CarCard2 text-center md:text-4xl lg:text-5xl">Introduction</p>
 
 
       <div className="flex justify-center mb-4 font-extrabold">
