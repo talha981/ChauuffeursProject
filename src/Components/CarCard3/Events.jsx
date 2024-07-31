@@ -38,7 +38,7 @@ function Events() {
 </p>
       <p className="mt-4 text-base md:text-lg lg:text-xl">
 we understand that the success of an event often hinges on the overall experience. That’s why we offer more than just transportation; we provide a memorable experience that enhances your event. From our luxury fleet to our attentive service, every aspect is designed to exceed expectations and ensure that your special occasion is unforgettable.</p>   
-   <div className="text-center text-lg md:text-xl lg:text-2xl mt-4">
+   <div className="text-center text-lg md:text-xl italic lg:text-2xl mt-4">
    “Events are not just about the moment but about creating lasting memories.” 
            <br /> <span className='text-yellow-600'> — Alexandra Brooks</span>
       </div>

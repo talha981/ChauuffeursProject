@@ -38,7 +38,7 @@ function Airport() {
         <p className="mt-4 text-base md:text-lg lg:text-xl">
           We pride ourselves on delivering an unparalleled level of service, marked by punctuality, reliability, and attention to detail. Our commitment to excellence is reflected in every aspect of our operations, from the quality of our vehicles to the professionalism of our staff. When you choose our rental car company for your transportation needs, you can expect a bespoke service that prioritizes your comfort, safety, and satisfaction, making your travel experience both memorable and enjoyable.
         </p>
-        <div className="text-center text-lg md:text-xl lg:text-2xl mt-4">
+        <div className="text-center text-lg md:text-xl italic lg:text-2xl mt-4">
           "One more stage, one more limo, one more run for your life."
           <br /> <span className='text-yellow-600'> — John Lennon</span>
         </div>

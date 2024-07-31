@@ -35,7 +35,7 @@ function Business() {
       Our fleet of luxurious vehicles and highly skilled chauffeurs are dedicated to delivering a smooth and punctual journey, reflecting the high standards of your business. We offer tailored services that accommodate your schedule, preferences, and specific requirements, ensuring a hassle-free travel experience that enhances your productivity and comfort.
 
 </p>
-      <p className="mt-4 text-base md:text-lg lg:text-xl">
+      <p className="mt-4 text-base md:text-lg italic lg:text-xl">
       Whether you’re heading to an important meeting, a corporate event, or any other business-related engagement, trust us to provide a level of service that aligns with the professionalism and excellence you expect. Our commitment to punctuality, discretion, and reliability ensures that every aspect of your transfer is handled with the utmost care and attention.      </p>
       <div className="text-center text-lg md:text-xl lg:text-2xl mt-4">
       "The best way to predict the future is to create it." 
