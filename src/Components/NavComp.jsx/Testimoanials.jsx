@@ -68,7 +68,7 @@ function Testimonials() {
       {reviews.map((card) => (
         card.id === reviews[step].id && (
           <div key={card.id}>
-            <div className="text-gray-700 text-center leading-relaxed flex flex-col md:flex-row items-center justify-center">
+            <div className="text-gray-700 text-center leading-relaxed flex flex-col md:flex-row items-center justify-center italic">
               {step > 0 && (
                 <img
                   src='prev-button.png'
@@ -93,7 +93,7 @@ function Testimonials() {
               )}
             </div>
             <div className="mt-4 text-center">
-              <h1 className="text-2xl mb-32 md:text-3xl text-CarCard2 lg:text-2xl font-semibold">
+              <h1 className="text-2xl mb-32 md:text-3xl italic text-CarCard2 lg:text-2xl font-semibold">
                 {card.name}
               </h1>
             </div>

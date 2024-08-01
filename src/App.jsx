@@ -11,6 +11,8 @@ import TopNavbar from './Components/Header/TopNavbar';
 import Airport from './Components/CarCard3/Airport';
 import Business from './Components/CarCard3/Business';
 import Events from './Components/CarCard3/Events';
+import OurFleet from './Components/CarCard/OurFleet';
+import Booking from './Components/NavComp.jsx/Booking';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
           <Route exact path='/airport' element={<Airport/>} />
           <Route exact path='/business' element={<Business/>} />
           <Route exact path='/event' element={<Events/>} />
+          <Route exact path='/fleet' element={<OurFleet/>} />
+          <Route exact path='/booking' element={<Booking/>} />
         </Routes>
           </div>
       </Router>

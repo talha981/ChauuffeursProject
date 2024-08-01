@@ -1,9 +1,9 @@
 import React, {  useMemo , useEffect } from 'react';
 
 function Events() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
+  useEffect(() => {
+    window.scrollTo(75,75 );
+  }, []);
     
       const images = useMemo(() => [
           { id: 1, src: "/Airport-img/airport1.jpg", alt: "Image 1" },

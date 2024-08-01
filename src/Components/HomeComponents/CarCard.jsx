@@ -5,7 +5,7 @@ function CarCard() {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/about'); // Update this to your desired route
+    navigate('/fleet'); // Update this to your desired route
   };
 
   return (
@@ -24,14 +24,17 @@ function CarCard() {
       <div className="flex flex-col lg:w-1/2 lg:pr-6">
         <h1 className="text-3xl font-semibold  text-yellow-700  md:text-4xl lg:text-6xl">Luxury Cars</h1>
         <p className="text-4xl lg:text-5xl text-CarCard2 mt-4 font-semibold">for Maximum <br /> Satisfaction</p>
-        <p className="text-sm lg:text-base mt-7  text-gray-700">
-          Explore the best of London with our best of luxury <br /> cars for a comfortable tour.
+        <p className="text-sm lg:text-base mt-4  text-gray-700  ">
+        Experience the finest of London with our exceptional luxury cars,  offering unparalleled comfort for your tour. Enjoy a refined and elegant travel <br/> experience as you explore  London in style. 
         </p>
         <div className=" mt-4 lg:text-left">
-        <button className="bg-yellow-700 text-white px-6 py-3 shadow-lg w-full sm:w-auto" 
-        onClick={handleNavigate}>
-      Read More
-    </button>
+        <button
+  className="bg-yellow-700 text-white px-6 py-3 shadow-lg w-full  rounded-lg sm:w-auto transition-colors duration-300 hover:bg-CarCard2"
+  onClick={handleNavigate}
+>
+  Our Fleet
+</button>
+
 
         </div>
       </div>

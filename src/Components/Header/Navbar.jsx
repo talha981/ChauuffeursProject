@@ -20,6 +20,12 @@ function Navbar() {
         About Us
       </Link>
       <Link
+        to="/booking"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/booking' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+      >
+        Booking
+      </Link>
+      <Link
         to="/testimonials"
         className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/testimonials' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
       >
@@ -38,11 +44,12 @@ function Navbar() {
         FAQ
       </Link>
       <Link
-        to="/gallery"
-        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/gallery' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
+        to="/fleet"
+        className={`block mx-4 lg:mx-4 uppercase font-semibold text-white ${location.pathname === '/fleet' ? 'text-yellow-300' : 'hover:text-gray-300'} p-2 rounded`}
       >
         Gallery
       </Link>
+     
     </>
   ), [location.pathname]); // Update navLinks when location.pathname changes
 

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 
 function Airport() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(75,75 );
   }, []);
 
   const images = useMemo(() => [

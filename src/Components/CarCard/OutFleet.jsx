@@ -1,20 +1,29 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react'
 
-function Business() {
-  useEffect(() => {
-    window.scrollTo(75,75 );
-  }, []);
-      const images = useMemo(() => [
-        { id: 1, src: "/Airport-img/airport1.jpg", alt: "Image 1" },
-        { id: 2, src: "/Airport-img/airport2.jpg", alt: "Image 2" },
-        { id: 3, src: "/Airport-img/airport3.jpg", alt: "Image 3" },
-        { id: 4, src: "/Airport-img/airport4.jpg", alt: "Image 4" },
-        { id: 5, src: "/Airport-img/airport5.jpg", alt: "Image 5" },
-        { id: 6, src: "/Airport-img/airport6.jpg", alt: "Image 6" },
-        { id: 7, src: "/Airport-img/airport7.jpg", alt: "Image 7" },
-        { id: 8, src: "/Airport-img/airport8.jpg", alt: "Image 8" },
-        { id: 9, src: "/Airport-img/airport9.jpg", alt: "Image 9" }
-      ], []);
+
+function OutFleet() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+
+    const images= useMemo(()=>[
+        {  id:1, src:"OurFleet/Fleet1.jpg", alt:"Image 1",},
+        {  id:2, src:"OurFleet/Fleet2.jpg", alt:"Image 1",},
+        {  id:3, src:"OurFleet/Fleet3.jpg", alt:"Image 1",},
+        {  id:4, src:"OurFleet/Fleet4.jpg", alt:"Image 1",},
+        {  id:5, src:"OurFleet/Fleet5.jpg", alt:"Image 1",},
+        {  id:6, src:"OurFleet/Fleet6.jpg", alt:"Image 1",},
+        {  id:7, src:"OurFleet/Fleet7.jpg", alt:"Image 1",},
+        {  id:8, src:"OurFleet/Fleet8.jpg", alt:"Image 1",},
+        {  id:9, src:"OurFleet/Fleet9.jpg", alt:"Image 1",},
+        {  id:10, src:"OurFleet/Fleet10.jpg", alt:"Image 1",},
+        {  id:11, src:"OurFleet/Fleet11.jpg", alt:"Image 1",},
+        {  id:12, src:"OurFleet/Fleet12.jpg", alt:"Image 1",},
+        {  id:13, src:"OurFleet/Fleet13.jpg", alt:"Image 1",},
+        {  id:14, src:"OurFleet/Fleet14.jpg", alt:"Image 1",},
+        {  id:15, src:"OurFleet/Fleet15.jpg", alt:"Image 1",},
+
+    ],[])
   return (
     <div className="container mx-auto p-6 font-sans">
     <p className="text-yellow-700 italic text-lg font-semibold mt-10 mb-4 text-center md:text-xl lg:text-2xl">Seamless Professional Transportation</p>
@@ -63,5 +72,4 @@ function Business() {
   )
 }
 
-export default Business
-
+export default OutFleet
