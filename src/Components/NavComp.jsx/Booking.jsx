@@ -58,15 +58,14 @@ const Booking = () => {
     <form onSubmit={handleSubmit} className="bg-gray-200 rounded-lg shadow-black p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {[
-          { label: 'Full Name', name: 'fullName', type: 'text' },
-          { label: 'Email Address', name: 'email', type: 'email' },
-          { label: 'Phone Number', name: 'phone', type: 'text' },
-          { label: 'Address', name: 'address', type: 'text' },
+          { label: 'Full Name', name: 'fullName', type: 'text', placeholder: 'Enter your full name' },
+          { label: 'Email Address', name: 'email', type: 'email', placeholder: 'Enter your Email Address' },
+          { label: 'Phone Number', name: 'phone', type: 'text', placeholder: 'Enter your Phone Number' },
           { label: 'Pick-Up Date and Time', name: 'pickUpDate', type: 'datetime-local' },
           { label: 'Drop-Off Date and Time', name: 'dropOffDate', type: 'datetime-local' },
-          { label: 'Pick-Up Location', name: 'pickUpLocation', type: 'text' },
-          { label: 'Drop-Off Location', name: 'dropOffLocation', type: 'text' },
-          { label: 'Special Requirements', name: 'specialRequirements', type: 'text' }
+          { label: 'Pick-Up Location', name: 'pickUpLocation', type: 'text', placeholder: 'Enter your Pick-Up Location' },
+          { label: 'Drop-Off Location', name: 'dropOffLocation', type: 'text', placeholder: 'Enter your Drop-Off Location' },
+          { label: 'Special Requirements', name: 'specialRequirements', type: 'text', placeholder: 'Enter any Special Requirements' }
         ].map((field, index) => (
           <div key={index} className="p-2">
             <label className="block text-sm font-medium text-gray-700">{field.label}</label>
@@ -76,6 +75,8 @@ const Booking = () => {
               value={formData[field.name]}
               onChange={handleChange}
               className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
+              placeholder={field.placeholder}
+
             />
           </div>
         ))}
@@ -87,6 +88,7 @@ const Booking = () => {
             onChange={handleChange}
             className="mt-1 p-2 block w-full border border-gray-300 rounded-md"
             rows="2"
+            placeholder='Enter any Comment'
           />
         </div>
         {[
@@ -101,6 +103,7 @@ const Booking = () => {
               checked={formData[checkbox.name]}
               onChange={handleChange}
               className="mt-1"
+
             />
           </div>
         ))}
@@ -200,26 +203,38 @@ const Booking = () => {
         <p className="text-yellow-700 m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">______________</p>
       </div>
-      
+
       <div className="flex justify-center mb-4">
-        <button
-          onClick={() => setFormType('byHour')}
-          className={`bg-yellow-700 text-white px-6 py-3 shadow-lg rounded-lg transition-colors duration-300 hover:bg-yellow-800 w-full sm:w-auto ${
-            formType === 'byHour' ? 'bg-yellow-700 text-white' : 'bg-gray-300 text-gray-700'
-          }`}
-        >
-          From
-        </button>
-        <button
-          onClick={() => setFormType('hourly')}
-          className={`bg-yellow-700 text-white px-6 ml-3 py-3 shadow-lg rounded-lg transition-colors duration-300 hover:bg-yellow-800 w-full sm:w-auto ${
-            formType === 'hourly' ? 'bg-yellow-700 text-white' : 'bg-gray-300 text-gray-700'
-          }`}
-        >
-          By Hour
-        </button>
-      </div>
-      
+  {/* New div with reduced height */}
+  <div className="bg-gray-200 p-2 rounded-lg">
+    {/* Existing button group */}
+    <div className="flex justify-center">
+      <button
+        onClick={() => setFormType('byHour')}
+        className={`relative px-6 py-2 text-lg rounded-lg transition-colors duration-300 w-full sm:w-auto ${formType === 'byHour' ? 'text-blue-600' : 'text-gray-700'}`}
+      >
+        From
+        {formType === 'byHour' && (
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+        )}
+      </button>
+      <button
+        onClick={() => setFormType('hourly')}
+        className={`relative px-6 py-2  text-lg  ml-3 rounded-lg transition-colors duration-300 w-full sm:w-auto ${formType === 'hourly' ? 'text-blue-600' : 'text-gray-700'}`}
+      >
+        By Hour
+        {formType === 'hourly' && (
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-600"></span>
+        )}
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
       {formType === 'byHour' ? formFieldsByHour : formFieldsHourly}
 
       {isConfirmed && (
@@ -230,7 +245,7 @@ const Booking = () => {
       )}
     </div>
 
-    
+
   );
 };
 

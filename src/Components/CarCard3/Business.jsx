@@ -37,7 +37,7 @@ function Business() {
 </p>
       <p className="mt-4 text-base md:text-lg italic lg:text-xl">
       Whether you’re heading to an important meeting, a corporate event, or any other business-related engagement, trust us to provide a level of service that aligns with the professionalism and excellence you expect. Our commitment to punctuality, discretion, and reliability ensures that every aspect of your transfer is handled with the utmost care and attention.      </p>
-      <div className="text-center text-lg md:text-xl lg:text-2xl mt-4">
+      <div className="text-center italic text-lg md:text-xl lg:text-2xl mt-4">
       "The best way to predict the future is to create it." 
         <br /> <span className='text-yellow-600'> — Peter Drucker</span>
       </div>

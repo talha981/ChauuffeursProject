@@ -114,35 +114,6 @@ function About() {
 
       </div>
 
-      {/* Contact Information */}
-      <h4 className="text-yellow-700 font-style: italic text-lg font-semibold mt-28 mb-4 text-center md:text-xl lg:text-2xl">Get Social
-      </h4>
-      <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">Stay Connected</h1>
-
-      <div className="flex justify-center mb-8 font-extrabold">
-        <p className="text-gray-400 m-0 p-0">__________________</p>
-        <p className="text-yellow-700  m-0 p-0">________________</p>
-        <p className="text-gray-400 m-0 p-0">_________________</p>
-      </div>
-      <div className="contact-info bg-Form3 rounded-lg p-8  shadow-lg">
-        <p className="text-lg text-center text-gray-700 mb-4">We would love to hear from you! Feel free to reach out to us with any inquiries or to book your next luxury ride.</p>
-        <div className="flex flex-col items-center mb-6">
-          <p className="text-lg text-gray-700"><strong>Email:</strong> <a href="mailto:info@grandeurchauffeurs.com" className="text-blue-500">info@grandeurchauffeurs.com</a></p>
-          <p className="text-lg text-gray-700"><strong>Phone Number:</strong> <a href="tel:+447766557716" className="text-blue-500 mr-6">+44 7766557716</a></p>
-        </div>
-        <div className="social-media flex flex-col lg:flex-row justify-center space-y-4 lg:space-y-0 lg:space-x-6 mt-4">
-  <a href="https://facebook.com" className="text-2xl text-blue-700 hover:text-blue-900 transition-colors ml-2">
-    <i className="fab fa-facebook"></i> Facebook
-  </a>
-  <a href="https://twitter.com" className="text-2xl text-blue-400 hover:text-blue-600 transition-colors ml-2">
-    <i className="fab fa-twitter"></i> Twitter
-  </a>
-  <a href="https://instagram.com" className="text-2xl text-pink-600 hover:text-pink-800 transition-colors ml-2">
-    <i className="fab fa-instagram"></i> Instagram
-  </a>
-</div>
-
-      </div>
     </div>
   );
 }

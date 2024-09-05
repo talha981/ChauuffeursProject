@@ -42,9 +42,9 @@ function OurFleet() {
       <p className="mt-4 text-base md:text-lg lg:text-xl">
       Experience the ultimate in comfort with our luxurious interiors. Our cars are equipped with the finest materials and state-of-the-art amenities to ensure a smooth and relaxing journey. Plush leather seats, advanced climate control, and premium sound systems are just a few of the features that set our fleet apart. Whether you're traveling for business or leisure, our cars provide an oasis of comfort and relaxation, making every journey a pleasure.
 </p>
-      <p className="mt-4 text-base md:text-lg italic lg:text-xl">
+      <p className="mt-4 text-base md:text-lg  lg:text-xl">
       Our high-performance cars deliver an exhilarating driving experience that is second to none. Engineered for speed and precision, each vehicle in our fleet offers exceptional handling and performance. Whether you're navigating city streets or cruising on the motorway, our cars provide a powerful and responsive ride. Trust in our fleet to deliver the perfect blend of performance and luxury, ensuring a driving experience that is both thrilling and refined.        </p>
-      <p className="mt-4 text-base md:text-lg italic lg:text-xl">
+      <p className="mt-4 text-base md:text-lg  lg:text-xl">
       Our elite fleet represents the pinnacle of automotive excellence. We offer a carefully curated selection of the world's most prestigious car brands, each renowned for their craftsmanship and innovation. From iconic classics to cutting-edge models, our fleet caters to the most discerning tastes. Experience the best that the automotive world has to offer with our exclusive selection, and indulge in the luxury of choice with our unparalleled range of vehicles.          </p>
       <div className="text-center text-lg md:text-xl lg:text-2xl italic mt-4">
       "Luxury must be comfortable, otherwise it is not luxury."
