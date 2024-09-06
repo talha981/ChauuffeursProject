@@ -1,36 +1,38 @@
 import React, { useMemo, useEffect } from 'react';
 import DOMPurify from 'dompurify';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa'; // Import icons
 
 function Contact() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   const cards = useMemo(() => [
     {
-      title: 'Location',
+      title: 'Address',
       content: '515 Battersea Park Road<br />London, SW11 3BN',
-      imgSrc: 'Bilal.png',
+      icon: <FaMapMarkerAlt className="text-yellow-700 text-4xl" />, // Use icon
     },
     {
       title: 'Phones',
       content: '+44 203 6171 114<br />+44 776 6557 716',
-      imgSrc: 'Bilal.png',
+      icon: <FaPhoneAlt className="text-yellow-700 text-4xl" />, // Use icon
     },
     {
       title: 'Email',
       content: 'info@grandeurchauffeurs.com',
-      imgSrc: 'Bilal.png',
+      icon: <FaEnvelope className="text-yellow-700 text-4xl" />, // Use icon
     },
     {
       title: 'Working Hours',
       content: 'MON-SUN<br />0600 - 2300',
-      imgSrc: 'Bilal.png',
+      icon: <FaClock className="text-yellow-700 text-4xl" />, // Use icon
     },
     {
       title: 'Whatsapp',
       content: '+44 7766557716',
-      imgSrc: 'Bilal.png',
+      icon: <FaWhatsapp className="text-yellow-700 text-4xl" />, // Use icon
     },
   ], []);
 
@@ -47,24 +49,28 @@ function Contact() {
         <p className="text-yellow-700  m-0 p-0">______________</p>
         <p className="text-gray-400 m-0 p-0">______________</p>
       </div>
+
+      {/* Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {cards.slice(0, 4).map((card, index) => (
           <div
             key={index}
             className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 bg-Form3 hover:shadow-black"
           >
-            <img src={card.imgSrc} alt={card.title} className="mx-auto mb-4 w-10 h-10" />
-            <h2 className="text-2xl font-semibold mb-2 text-yellow-700">{card.title}</h2>
+<div className="flex items-center justify-center mx-auto mb-4 w-10 h-10">{card.icon}</div> {/* Display icon in center */}
+<h2 className="text-2xl font-semibold mb-2 text-black">{card.title}</h2>
             <p
               className="text-base text-gray-700 break-words text-CarCard2"
               dangerouslySetInnerHTML={{ __html: sanitizeHTML(card.content) }}
             />
           </div>
         ))}
+
+        {/* Whatsapp Section */}
         <div className="md:col-span-4 flex mb-28 justify-center">
           <div className="border border-gray-300 border-r-dashed rounded-lg p-4 shadow-lg text-center transition duration-300 transform hover:scale-105 hover:shadow-black w-full max-w-sm bg-Form3">
-            <img src={cards[4].imgSrc} alt={cards[4].title} className="mx-auto mb-4 w-10 h-10" />
-            <h2 className="text-2xl font-semibold mb-2 text-yellow-700">{cards[4].title}</h2>
+            <div className="flex items-center justify-center mx-auto mb-4 w-10 h-10">{cards[4].icon}</div> {/* Display icon */}
+            <h2 className="text-2xl font-semibold mb-2 text-black">{cards[4].title}</h2>
             <p
               className="text-base break-words text-CarCard2"
               dangerouslySetInnerHTML={{ __html: sanitizeHTML(cards[4].content) }}
@@ -73,8 +79,7 @@ function Contact() {
         </div>
       </div>
 
-
-
+      
       <h4 className="text-yellow-700 italic text-lg font-semibold  mb-4 text-center md:text-xl lg:text-2xl">Reach Out</h4>
       <h1 className="text-3xl font-semibold mb-4 text-center md:text-4xl lg:text-5xl text-CarCard2">Send Message</h1>
       <div className="flex justify-center mb-4 font-extrabold">

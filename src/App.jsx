@@ -13,6 +13,7 @@ import Business from './Components/CarCard3/Business';
 import Events from './Components/CarCard3/Events';
 import OurFleet from './Components/CarCard/OurFleet';
 import Booking from './Components/NavComp.jsx/Booking';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,22 +21,26 @@ function App() {
       <Router>
         <TopNavbar />
         <Navbar />
-          <div className=''>
-        <Routes >
 
-          <Route exact path='/' element={<Home />} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/testimonials' element={<Testimoanials />} />
-          <Route exact path='/contact' element={<Contact />} />
-          <Route exact path='/faq' element={<Faq />} />
-          <Route exact path='/gallery' element={<Gallery />} />
-          <Route exact path='/airport' element={<Airport/>} />
-          <Route exact path='/business' element={<Business/>} />
-          <Route exact path='/event' element={<Events/>} />
-          <Route exact path='/fleet' element={<OurFleet/>} />
-          <Route exact path='/booking' element={<Booking/>} />
-        </Routes>
-          </div>
+        <div className=''>
+          <Routes >
+
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/about' element={<About />} />
+            <Route exact path='/testimonials' element={<Testimoanials />} />
+            <Route exact path='/contact' element={<Contact />} />
+            <Route exact path='/faq' element={<Faq />} />
+            <Route exact path='/gallery' element={<Gallery />} />
+            <Route exact path='/airport' element={<Airport />} />
+            <Route exact path='/business' element={<Business />} />
+            <Route exact path='/event' element={<Events />} />
+            <Route exact path='/fleet' element={<OurFleet />} />
+            <Route exact path='/booking' element={<Booking />} />
+
+          </Routes>
+        </div>
+        <Footer />
+
       </Router>
 
     </>

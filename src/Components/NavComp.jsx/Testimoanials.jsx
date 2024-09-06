@@ -1,7 +1,17 @@
 import React, { useMemo, useState } from 'react';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 function Testimonials() {
-  // Store testimonial data in an array of objects
+  const validationSchema = Yup.object({
+    name: Yup.string().required('Name is required'),
+    email: Yup.string().email('Invalid email address').required('Email is required'),
+    contact: Yup.string().required('Contact number is required'),
+    review: Yup.string().required('Review is required'),
+  });
   const reviews = useMemo(() => [
     {
       id: 1,
@@ -66,40 +76,39 @@ function Testimonials() {
 
       {/* Render all testimonials but show only the current one based on step */}
       {reviews.map((card) => (
-        card.id === reviews[step].id && (
-          <div key={card.id}>
-            <div className="text-gray-700 text-center leading-relaxed flex flex-col md:flex-row items-center justify-center italic">
-              {step > 0 && (
-                <img
-                  src='prev-button.png'
-                  alt="Previous"
-                  onClick={prevStep}
-                  className="cursor-pointer w-8 h-8 md:mr-4"
-                />
-              )}
-              <div className="text-base md:text-lg lg:text-xl mx-auto max-w-4xl">
-              <div className="p-4 bg-gray-200 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg hover:scale-105">
-  {card.review}
-</div>
-
-              </div>
-              {step < reviews.length - 1 && (
-                <img
-                  src='next-button.png'
-                  alt="Next"
-                  onClick={nextStep}
-                  className="cursor-pointer w-8 h-8 md:ml-4"
-                />
-              )}
-            </div>
-            <div className="mt-4 text-center">
-              <h1 className="text-2xl mb-32 md:text-3xl italic text-CarCard2 lg:text-2xl font-semibold">
-                {card.name}
-              </h1>
-            </div>
+  card.id === reviews[step].id && (
+    <div key={card.id}>
+      <div className="text-gray-700 text-center leading-relaxed flex flex-col md:flex-row items-center justify-center italic">
+        {step > 0 && (
+          <FontAwesomeIcon
+            icon={faChevronLeft}
+            onClick={prevStep}
+            className="cursor-pointer w-8 h-8 md:mr-4 self-center"
+          />
+        )}
+        <div className="text-base md:text-lg lg:text-xl mx-auto max-w-4xl mt-7 mb-7">
+          <div className="p-4 bg-gray-200 rounded-lg shadow-md transition-all duration-300 ease-in-out hover:bg-gray-200 hover:shadow-lg hover:scale-105">
+            {card.review}
           </div>
-        )
-      ))}
+        </div>
+        {step < reviews.length - 1 && (
+          <FontAwesomeIcon
+            icon={faChevronRight}
+            onClick={nextStep}
+            className="cursor-pointer  w-8 h-8 md:ml-4 self-center"
+          />
+        )}
+      </div>
+      <div className="mt-6 text-center">
+        <h1 className="text-2xl mb-32 md:text-3xl italic text-CarCard2 lg:text-2xl font-semibold">
+          ---{card.name}---
+        </h1>
+      </div>
+    </div>
+  )
+))}
+
+
 
       <h4 className="text-yellow-700 font-italic text-lg font-semibold mt-32 mb-4 text-center md:text-xl lg:text-xl">
         Feedback
@@ -115,44 +124,78 @@ function Testimonials() {
 
       <div className="bg-gray-200 flex rounded-2xl justify-center">
         <div className="w-full max-w-lg p-8">
-          <form className="space-y-4">
-            <div>
-              <input
-                type="text"
-                placeholder="Enter Your Name"
-                className="w-full p-4 rounded-lg text-gray-700 placeholder-gray-500 border-black" 
-              />
-            </div>
-            <div className="flex flex-col md:flex-row md:space-x-4">
-              <input
-                type="text"
-                placeholder="Enter Your Email"
-                className="w-full md:w-1/2 p-4 rounded-lg text-gray-700 placeholder-gray-500 mb-4 md:mb-0"
-              />
-              <input
-                type="text"
-                placeholder="Enter Contact Number"
-                className="w-full md:w-1/2 p-4 rounded-lg text-gray-700 placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                placeholder="Your Reviews"
-                className="w-full p-4 rounded-lg text-gray-700 placeholder-gray-500"
-              />
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="w-full p-4 rounded-lg bg-yellow-700 text-white hover:bg-yellow-600 hover:text-white transition duration-300"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+          <Formik
+            initialValues={{
+              name: '',
+              email: '',
+              contact: '',
+              review: '',
+            }}
+            validationSchema={validationSchema}
+            onSubmit={(values, { resetForm }) => {
+              console.log(values);
+              resetForm();
+            }}
+          >
+            {({ errors, touched }) => (
+              <Form className="space-y-4">
+                <div>
+                  <Field
+                    name="name"
+                    type="text"
+                    placeholder="Enter Your Name"
+                    className={`w-full p-4 rounded-lg text-gray-700 placeholder-gray-500 border ${touched.name && errors.name ? 'border-red-500' : ''
+                      }`}
+                  />
+                  <ErrorMessage name="name" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+                <div className="flex flex-col md:flex-row md:space-x-4">
+                  <div className="w-full md:w-1/2">
+                    <Field
+                      name="email"
+                      type="email"
+                      placeholder="Enter Your Email"
+                      className={`w-full p-4 rounded-lg text-gray-700 placeholder-gray-500 border ${touched.email && errors.email ? 'border-red-500' : ''
+                        }`}
+                    />
+                    <ErrorMessage name="email" component="div" className="text-red-500 text-sm mt-1" />
+                  </div>
+                  <div className="w-full md:w-1/2">
+                    <Field
+                      name="contact"
+                      type="text"
+                      placeholder="Enter Contact Number"
+                      className={`w-full p-4 rounded-lg text-gray-700 placeholder-gray-500 border ${touched.contact && errors.contact ? 'border-red-500' : ''
+                        }`}
+                    />
+                    <ErrorMessage name="contact" component="div" className="text-red-500 text-sm mt-1" />
+                  </div>
+                </div>
+                <div>
+                  <Field
+                    name="review"
+                    type="text"
+                    placeholder="Your Reviews"
+                    className={`w-full p-4 rounded-lg text-gray-700 placeholder-gray-500 border ${touched.review && errors.review ? 'border-red-500' : ''
+                      }`}
+                  />
+                  <ErrorMessage name="review" component="div" className="text-red-500 text-sm mt-1" />
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full p-4 rounded-lg bg-yellow-700 text-white hover:bg-yellow-600 transition duration-300"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </Form>
+            )}
+          </Formik>
         </div>
       </div>
+
+
     </div>
   );
 }
